@@ -81,3 +81,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.carrier?=unknown \
     ro.config.notification_sound?=OnTheHunt.ogg \
     ro.config.alarm_alert?=Alarm_Classic.ogg
+
+# Include vendor build hook
+$(call inherit-product-if-exists, vendor/chaotic/build/product.mk)
